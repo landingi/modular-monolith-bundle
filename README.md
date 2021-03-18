@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.com/landingi/modular-monolith-bundle.svg?branch=master)](https://travis-ci.com/landingi/modular-monolith-bundle)
+[![License MIT](https://img.shields.io/apm/l/vim-mode.svg)](https://opensource.org/licenses/MIT)
+![Packagist Version](https://img.shields.io/packagist/v/landingi/event-store-bundle)
+
 # Modules in Modular Monolith
 From the point of view of a modular monolith, it is important not to introduce code level coupling between its modules.
 

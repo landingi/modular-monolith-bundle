@@ -1,0 +1,17 @@
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="Landingi\ModularMonolithBundle\Module\InMemoryModuleRegistry"/>
+        <service id="Landingi\ModularMonolithBundle\Module\InMemoryModuleClient">
+            <argument type="service" id="Landingi\ModularMonolithBundle\Module\InMemoryModuleRegistry"
+                      on-invalid="exception"/>
+        </service>
+        <service id="Landingi\ModularMonolithBundle\Module\ModuleRegistry"
+                 alias="Landingi\ModularMonolithBundle\Module\InMemoryModuleRegistry"/>
+        <service id="Landingi\ModularMonolithBundle\Module\ModuleClient"
+                 alias="Landingi\ModularMonolithBundle\Module\InMemoryModuleClient"/>
+    </services>
+</container>

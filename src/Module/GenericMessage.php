@@ -43,7 +43,7 @@ final class GenericMessage implements Message
 
     public function getRequiredString(string $key): string
     {
-        return $this->getRequired($key);
+        return (string) $this->getRequired($key);
     }
 
     public function getInt(string $key): int
